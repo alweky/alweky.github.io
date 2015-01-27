@@ -1,0 +1,30 @@
+body {
+    background-color: #ffffff;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    border-width: 5px;
+} 
+
+#top-bar {
+	    color: #bbbccc;
+}
+
+#bottom {
+	background-color:#cccccc;
+}
+
+#mynav {
+	background-color:#cccccc;
+}
+
+.top-bar-section li a:not(.button) {
+    background:black;
+    color: white;
+}
