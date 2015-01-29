@@ -1,5 +1,6 @@
 body {
-    background-color: #ffffff;
+    background-image: url("assets/grey-white-gradient.png");
+    background-repeat: repeat-x;
 }
 
 hr { 
@@ -12,19 +13,41 @@ hr {
     border-width: 5px;
 } 
 
-#top-bar {
-	    color: #bbbccc;
+table {
+
 }
 
-#bottom {
-	background-color:#cccccc;
+#bottom , #myImage{
+	background:#cccccc;
+	border: 2px;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
-#mynav {
-	background-color:#cccccc;
+#projectLogo{
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
-.top-bar-section li a:not(.button) {
-    background:black;
-    color: white;
+.button{
+	box-shadow: 10px 10px 5px #888888;
+	background: #730000;
+}
+
+.top-bar
+{
+	border: 2px;
+	border-radius: 25px;
+	background:#333333;
+}
+
+.top-bar-section ul li> a { 
+	background: #333333 !important;
+}
+
+.top-bar-section ul li.active > a { 
+	background: #ffffff !important;
+	color: black !important;
+	opacity: .5;
 }
