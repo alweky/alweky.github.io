@@ -1,4 +1,11 @@
 <!doctype html>
+
+<!--
+	projectAServices.html
+	Kevin Sau Yeung Kam
+	My Website
+	This is the Services of the project Very similair to the project page
+-->
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -13,12 +20,12 @@
 		<div class="large-2 small-2 columns">
 			<img src="assets/logo.png" alt="" />
 		</div>
-		<div class="large-10 columns">	
+		<div class="large-10 small-10 columns">	
 			<div class="row">				
 				<h1>Welcome to My Webpage!</h1>
 			</div>
 			<div class="row" id="mynav">			
-				<nav class="top-bar" data-topbar role="navigation">
+				<nav class="top-bar hide-for-small" data-topbar role="navigation">
 					<section class="top-bar-section">
 						<ul class="left">
 							<li>
@@ -44,38 +51,118 @@
 									<li><a href="servicesTutoring.html">Tutoring</a></li>
 								</ul>
 							</li>
-							<li>
+							<li class="hide-for-medium">
 								<a href="https://github.com/alweky/">GitHub</a>
 							</li>
 							<li>
 								<a href="contactMe.html">Contact Me</a>
 							</li>
+							<li class="hide-for-medium">
+								<a href="siteMap.html">SiteMap</a>
+							</li>
 						</ul>
 					</section>
 				</nav>
+				<ul class="breadcrumbs hide-for-small hide-for-medium">
+					 <li><a href="services.html">Services</a></li>
+				</ul>
+				<div class="icon-bar five-up hide-for-large hide-for-medium hide-for-xlarge">
+					<a class="item" href="index.html">
+						<img src="assets/navHome.png" >
+						<label>Home</label>
+					</a>
+					<a class="item" href="aboutMe.html">
+						<img src="assets/navAboutMe.png" >
+						<label>About Me</label>
+					</a>
+					<a class="item" href="project.html">
+						<img src="assets/navProject.png" >
+						<label>Projects</label>
+					</a>
+					<a class="item" href="services.html">
+						<img src="assets/navServices.png" >
+						<label>Services</label>
+					</a>
+					<a class="item" href="contactMe.html">
+						<img src="assets/navContact.png" >
+						<label>Site Map</label>
+					</a>
+				</div>
 			</div>
 		</div>	
 	</div>
 	<div class="row">
 		<article class="large-12 columns large-offset-1">
-			<h2>Hello!</h2>
+			<h2>Services</h2>
 			<p>
-				This website contains information about me. Click on the items in the nav bar to learn more about me!
+				Below are some services that I offer
 			</p>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="servicesDevelopment.html">
+								<img src="assets/development.jpg" alt="" />
+							</a>
+						</td>
+						<td>
+							<h5>Development</h5>							
+							<p>I have experience using many different object oriented languages and non object oriented languages and an understanding of Agile Development process
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="servicesWebDesign.html">"
+								<img src="assets/webDesign.jpg" alt="" />
+							</a>
+						</td>
+						<td>
+							<h5>Web Development</h5>							
+							<p>I have experience creating webpages. Some examples of webpages include this website.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="servicesTutoring.html">
+								<img src="assets/tutoring.jpg" alt="" />
+							</a>
+						</td>
+						<td>
+							<h5>Tutoring</h5>							
+							<p>I have over three years of tutoring and also over eight months of professional experience at Centennial College 
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 	</div>
 	<hr></hr>
 	<div class="row" id="bottom">
 		<div class="large-5 columns">
-			<p>&copy; Kevin Sau Yeung Kam 2014</p>
+			<dl class="sub-nav">
+				<dd>&copy; Kevin Sau Yeung Kam 2015</dd>
+				<dd class="hide-for-small"><a href="terms.html">Terms of Use</a></dd>
+				<dd class="hide-for-small"><a href="policy.html">Privacy Policy</a></dd>
+				<dd><a href="siteMap.html">Site Map</a></dd>
+			</dl>
+			</dl>
 		</div>
 		<div class="large-7 columns">
 			<dl class="sub-nav">
-				<dt>Connect with Me:</dt>
-				<dd><a href="#">Facebook</a></dd>
-				<dd><a href="#">Linkedin</a></dd>
-				<dd><a href="#">Github</a></dd>
-				<dd><a href="#">Steam</a></dd>
+				<dt class="hide-for-small">Connect with Me:</dt>
+				<dd><a href="https://www.facebook.com/kevin.kam.351"><img src="assets/iconFacebook.png" alt="" /></a></dd>
+				<dd><a href="https://ca.linkedin.com/pub/kevin-kam/3a/77/8b3/en"><img src="assets/iconLink.png" alt="" /></a></dd>
+				<dd><a href="https://github.com/alweky/"><img src="assets/iconGithub.png" alt="" /></a></dd>
+				<dd><a href="https://plus.google.com/u/0/109539327159979475398/posts"><img src="assets/iconGoogle.png" alt="" /></a></dd>
 			</dl>
 		</div>
 	</div>

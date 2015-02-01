@@ -1,8 +1,17 @@
+/*	app.css
+	Kevin Sau Yeung Kam
+	My Website
+	This is an css file for my website
+*/
+
 body {
+	/* gives a gradiant background */
     background-image: url("assets/grey-white-gradient.png");
     background-repeat: repeat-x;
 }
 
+
+/* gives a modified line bar */
 hr { 
     display: block;
     margin-top: 0.5em;
@@ -13,8 +22,15 @@ hr {
     border-width: 5px;
 } 
 
-table {
+/*gives a new font for these elements */
+h1,h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
 
+table {
+	background: transparent; 
+	border-color: transparent;
+	border-radius: 25px;
 }
 
 #bottom , #myImage{
@@ -30,11 +46,15 @@ table {
 	box-shadow: 10px 10px 5px #888888;
 }
 
+/*gives the button a diferent colour */
+
 .button{
 	box-shadow: 10px 10px 5px #888888;
 	background: #730000;
 }
 
+
+/*rounds the nav */
 .top-bar
 {
 	border: 2px;
@@ -51,3 +71,15 @@ table {
 	color: black !important;
 	opacity: .5;
 }
+
+/*breadcrumbs had a grey background, wanted transparent*/
+.breadcrumbs{
+	background: transparent; 
+	border-color: transparent;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.breadcrumbs ul li>a{
+	color: black;
+}	
