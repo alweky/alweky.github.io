@@ -8,13 +8,15 @@
 	<script src="scripts/detectmobilebrowser.js"></script>-->
     <!-- CSS SECTION -->
     <link href="assets/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+	<link href="css/f.css" rel="stylesheet" />
     <link href="css/mobile.css" rel="stylesheet" />
 </head>
 <body onload="init();">
 	<!-- Home Page Wrapper -->
 	<div data-role="page" id="home">	
 		<header data-role="header">
-			<h1>Welcome to Home Page</h1>
+			<h1>Welcome to My Webpage!</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active" data-transition="slide">Home</a></li>
@@ -25,16 +27,30 @@
 			</div>
 		</header>		
 		<section data-role="content">
-			<p>Your Content Goes here</p>
+			<h2>Hello! I'm a Software Engineer</h2>
+			<p>
+				This means that I solve problems... which is something that I enjoy doing
+				<br>
+				I enjoy using computers and am looking to have a career that involves them
+				<br>
+				This website contains information about me. Click on the items in the nav bar to learn more about me!
+				<br>				
+			</p>
+			<hr></hr>
+			<h2><a href="#aboutMe" id="homeHeader">About Me!</a></h2>
+			<p>
+				I am currently a student at Centennial College studying Software Engineering....
+			</p>	
 		</section>		
 		<footer data-role="footer">		
-			<h4>CopyRight 2015</h4>		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>	
 		</footer>
 	</div>
 	<!-- Projects Page Wrapper -->
-	<div data-role="page" id="projects">	
+	<div data-role="page" id="projects">
 		<header data-role="header">
-			<h1>Welcome to Home Page</h1>
+			<h1>Welcome to My Webpage!</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
@@ -45,16 +61,322 @@
 			</div>
 		</header>		
 		<section data-role="content">
-			<p>Your Content Goes here</p>
+			<table data-role="table" id="service-table" class="ui-responsive">
+			  <thead>
+				<tr>
+				  <th data-priority="1"></th>
+				  <th data-priority="persist"><th>
+				</tr>
+			  </thead>
+			  <thead>
+					<tr>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="#jumperPage">
+								<img src="assets/siteImages/jumperThumb.png" alt="" />
+							</a>
+						</td>
+						<td>
+							<h3>Jumper!</h3>							
+							<p>This was a game that I developed for in my COMP397 class. It is a html5 game based on the Box2d engine and 
+							   is a simple platforming game where you take control of a "gum stick"
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#advancedSpaceWarsPage">
+								<img src="assets/siteImages/advancedSpaceWarsThumb.png" alt="" />
+							</a>
+						</td>
+						<td>
+							<h3>Advanced Space Wars</h3>							
+							<p>This was a game that I developed for in my COMP397 class. It is a html5 game based on the Box2d engine and 
+							   is a simple space shooter where one can shoot lasers and torpedo.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#solarSystemPage">
+								<img src="assets/siteImages/solarSystemThumb.png" alt="" />
+							</a>
+						</td>
+						<td>
+							<h3>ThreeJS Solar System</h3>
+							<p>This was a game that I developed for in my COMP392 class. It is a solar system based on the ThreeJS library.
+							There are eight planets and Saturn has two moons orbiting it as well."
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#androidHealthPage">
+								<img src="assets/siteImages/androidHealthThumb.png" alt=""/>
+							</a>
+						</td>
+						<td>
+							<h3>Android Health App</h3>
+							<p>This is an app was I developed for my COMP304 class. It is an health app that connects to a web service in order
+							to record vital signs and other information of a patient.
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</section>		
 		<footer data-role="footer">		
-			<h4>CopyRight 2015</h4>		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>			
+		</footer>
+	</div>
+	<!-- Sub Projects Page Wrapper -->
+	<div data-role="page" data-display="overlay" id="androidHealthPage">
+		<header data-role="header">
+			<h1>Welcome to My Webpage!</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
+					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
+					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+				</ul>
+			</div>
+		</header>
+		<br>
+		<section data-role="content">
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><img src="assets/siteImages/androidHealthThumb.png" id="projectLogo"></div>
+			<div class="ui-block-b"><h2>Android Health App</h2></div>
+		</div>
+		<a href="#popupAndroidHealth01" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth01.png" id="projectSS"></a></li>
+		<a href="#popupAndroidHealth02" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth02.png" id="projectSS"></a></li>
+		<a href="#popUpAndroidHealth03" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth03.png" id="projectSS"></a></li>
+		<a href="#popUpAndroidHealth04" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth04.png" id="projectSS"></a></li>
+		<div data-role="popup" id="popupAndroidHealth01">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="assets/siteImages/androidHealth01.png">
+		</div>
+		<div data-role="popup" id="popupAndroidHealth02">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="assets/siteImages/androidHealth02.png">
+		</div>
+		<div data-role="popup" id="popupAndroidHealth03">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="assets/siteImages/androidHealth03.png">
+		</div>
+		<div data-role="popup" id="popupAndroidHealth04">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="assets/siteImages/androidHealth04.png">
+		</div>
+		<div data-role="collapsible">
+			<h2>Description</h2>
+			<p>
+			This app was developed for the COMP304 course (Wireless Programming). It allowed users to enter in vital data such as heart-rate, blood pressure, etc... and send these inputs to an web service.
+			<br></br>
+			Some features of this app include
+			<ul>
+			<li><strong>User Login: </strong>login screen can take both patient and nurse login
+			</li>
+			<li><strong>Vital Sign: </strong>allow the input of vital signs by a nurse that will be sent to an external database 
+			</li>
+			<li><strong>Watch Videos: </strong>motivational video to promote patients to exercise more
+			</li>
+			<li><strong>Signs and Symptoms Checklist: </strong>check certain symptoms and receive possible illnesses
+			</li>
+			<li><strong>Send and Receive Health Text: </strong>allows Nurses and Patients to send and receive texts of health related issues
+			</li>
+			<li><strong>Location Tracking: </strong>allows Nurses too locate Patients
+			</li>
+			</ul>
+		</p>
+		</div>
+		</section>
+		<footer data-role="footer">		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>			
+		</footer>
+	</div>
+	<div data-role="page" data-display="overlay" id="advancedSpaceWarsPage">
+		<header data-role="header">
+			<h1>Welcome to My Webpage!</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
+					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
+					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+				</ul>
+			</div>
+		</header>		
+		<br>
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><img src="assets/siteImages/advancedSpaceWarsThumb.png" id="projectLogo"></div>
+			<div class="ui-block-b"><h2>Advanced Space Wars</h2></div>
+		</div>
+		<a href="#popupAndroidHealth01" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="assets/siteImages/androidHealth01.png" id="projectSS"></a></li>
+		<a href="#popupAndroidHealth02"><img src="assets/siteImages/androidHealth02.png" height="300" width="200" id="projectSS"></a></li>
+		<a href="#popUpAndroidHealth03"><img src="assets/siteImages/androidHealth03.png" height="300" width="200" id="projectSS"></a></li>
+		<a href="#popUpAndroidHealth04"><img src="assets/siteImages/androidHealth04.png" height="300" width="200" id="projectSS"></a></li>
+		<section data-role="content">
+		<div data-role="collapsible">
+			<h2>Description</h2>
+			<p>
+				This HTML5 game was developed for the COMP397 course (Web Game Programming). This is space shooter game based on the box2d engine where players take control of a ship and use it too destroy other enemies!
+				<br></br>
+				Some features of this Game include
+				<ul>
+				<li><strong>Realistic Physics!: </strong>game based on Box2d engine
+				</li>
+				<li><strong>Lasers: </strong>PEW PEW!
+				</li>
+				<li><strong>Torpedoes: </strong>POW POW!
+				</li>
+				<li><strong>Debris: </strong>Destroy your enemies and watch their ships parts scatter across space
+				</li>
+				</ul>
+			</p>
+		</div>
+		</section>
+		<footer data-role="footer">		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>			
+		</footer>
+	</div>
+	<div data-role="page" data-display="overlay" id="solarSystemPage">
+		<header data-role="header">
+			<h1>Welcome to My Webpage!</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
+					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
+					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+				</ul>
+			</div>
+		</header>	
+		<br>
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><img src="assets/siteImages/solarSystemThumb.png" id="projectLogo"></div>
+			<div class="ui-block-b"><h2>ThreeJS Solar System</h2></div>
+		</div>	
+		<a href="#popupAndroidHealth01" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="assets/siteImages/androidHealth01.png" id="projectSS"></a></li>
+		<a href="#popupAndroidHealth02"><img src="assets/siteImages/androidHealth02.png" height="300" width="200" id="projectSS"></a></li>
+		<a href="#popUpAndroidHealth03"><img src="assets/siteImages/androidHealth03.png" height="300" width="200" id="projectSS"></a></li>
+		<a href="#popUpAndroidHealth04"><img src="assets/siteImages/androidHealth04.png" height="300" width="200" id="projectSS"></a></li>
+		<section data-role="content">
+		<div data-role="collapsible">
+			<h2>Description</h2>
+			<p>
+				This ThreeJS model that was developed for the COMP392 course (Advanced Graphics). This is a solar system model which includes all eight planets (distances not to scale) and two moons of Saturn.
+				<br></br>
+				Some features of this Game include
+				<ul>
+				<li><strong>Speed Scroll: </strong>increase or decrease how fast the planets are moving
+				</li>
+				<li><strong>Stop Simulation: </strong>you can also pause as well
+				</li>
+				</ul>
+			</p>
+		</div>
+		</section>
+		<footer data-role="footer">		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>			
+		</footer>
+	</div>
+	<div data-role="page" data-display="overlay" id="jumperPage">
+		<header data-role="header">
+			<h1>Welcome to My Webpage!</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
+					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
+					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+				</ul>
+			</div>
+		</header>	
+		<br>
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><img src="assets/siteImages/jumperThumb.png" id="projectLogo"></div>
+			<div class="ui-block-b"><h2>Jumper!</h2></div>
+		</div>	
+		<a href="#popupJumper01" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="assets/siteImages/jumper01.png" id="projectASS"></a></li>
+		<a href="#popupJumper02"><img src="assets/siteImages/jumper02.png" id="projectASS"></a></li>
+		<a href="#popUpJumper03"><img src="assets/siteImages/jumper03.png" id="projectASS"></a></li>
+		<a href="#popUpJumper04"><img src="assets/siteImages/jumper04.png" id="projectASS"></a></li>
+		<section data-role="content">
+		<div data-role="collapsible">		
+			<h2>Description</h2>
+			<p>
+				This HTML5 game was developed for the COMP397 course (Web Game Programming). This is platforming game based on the box2d engine where players take control of a gum stick and have it transverse the many lands that present itself to it
+				<br></br>
+				Some features of this Game include
+				<ul>
+				<li><strong>Realistic Physics!: </strong>game based on Box2d engine
+				</li>
+				<li><strong>Water Level: </strong>not only can you jump around in this game, but in the second world, you can also swim
+				</li>
+				</ul>
+			</p>
+		</div>
+		</section>
+		<footer data-role="footer">		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>			
 		</footer>
 	</div>
 	<!-- Services Page Wrapper -->
 	<div data-role="page" id="services">	
+		<div data-role="panel" data-display="overlay" id="developmentPanel">
+			<h2>Software Development</h2>
+			<p>
+				I have experience using many different object oriented languages and non object oriented languages, some of these include:
+				<ul>
+					<li>Java</li>
+					<li>C#</li>
+					<li>jscript</li>
+				</ul>
+			</p>
+			<p>
+				I also have an understanding of Agile Development process
+			</p>
+			<a href="#services" class="ui-btn" data-rel="close">Close</a>
+		</div>
+		<div data-role="panel" data-display="overlay" id="webDesignPanel">
+			<h2>Web Design/Development</h2>
+			<p>
+				I have experience creating webpages. Some examples of webpages include this website, but also some below
+			</p>
+			<a href="#services" class="ui-btn" data-rel="close">Close</a>
+		</div>
+		<div data-role="panel" data-display="overlay" id="tutoringPanel">
+			<h2>Tutoring</h2>
+			<p>
+				I have over three years of tutoring and also over eight months of professional experience at Centennial College
+				<br></br>
+				Some of the subjects that I tutor, include the following (for High School):
+				<ul>
+				<li>Physics (High School)</li>
+				<li>Chemistry (Grade 11)</li>
+				<li>Mathematics (including Data Management, Calculus/Vectors)</li>
+				<li>Economics</li>
+				<li>Accounting</li>
+				</ul>
+			</p>
+			<p>
+				For College, I tutor the following subjects:
+				<ul>
+				<li>Programming (Java, C#)</li>
+				<li>Web Development (html5, css3, jscript)</li>
+				<li>Database (Oracle, MySQL, SQLServer, Access)</li>
+				</ul>
+			</p>
+			<a href="#services" class="ui-btn" data-rel="close">Close</a>
+		</div>
 		<header data-role="header">
-			<h1>Welcome to Home Page</h1>
+			<h1>Welcome to My Webpage!</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
@@ -65,16 +387,62 @@
 			</div>
 		</header>		
 		<section data-role="content">
-			<p>Your Content Goes here</p>
+			<p>Services Content</p>
+			<table data-role="table" id="service-table" class="ui-responsive">
+			  <thead>
+				<tr>
+				  <th data-priority="1"></th>
+				  <th data-priority="persist"><th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+					<td>
+						<a href="#developmentPanel">
+							<img src="assets/siteImages/development.jpg" alt="" />
+						</a>
+					</td>
+					<td>
+						<h3>Development</h3>							
+						<p>I have experience using many different object oriented languages and non object oriented languages and an understanding of Agile Development process
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#webDesignPanel">
+							<img src="assets/siteImages/webDesign.jpg" alt="" />
+						</a>
+					</td>
+					<td>
+						<h3>Web Development</h3>							
+						<p>I have experience creating webpages. Some examples of webpages include this website.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#tutoringPanel">
+							<img src="assets/siteImages/tutoring.jpg" alt="" />
+						</a>
+					</td>
+					<td>
+						<h3>Tutoring</h3>	
+						<p>I have over three years of tutoring and also over eight months of professional experience at Centennial College 
+						</p>
+					</td>
+				</tr>
+			  </tbody>
+			</table>
 		</section>		
 		<footer data-role="footer">		
-			<h4>CopyRight 2015</h4>		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>			
 		</footer>
 	</div>
 	<!-- Contact Page Wrapper -->
 	<div data-role="page" id="contacts">	
 		<header data-role="header">
-			<h1>Welcome to Home Page</h1>
+			<h1>Welcome to My Webpage!</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
@@ -85,10 +453,67 @@
 			</div>
 		</header>		
 		<section data-role="content">
-			<p>Projects</p>
+			<h2>Contact Me</h2>
+			<p>How to reach me<br>
+			You can reach me at alweky@yahoo.ca or at alwekycell@gmail.com
+			<br></br>
+			Leave a message</p>
+			<form action="">
+            <div data-role="fieldcontain" data-controltype="textinput">
+                <label for="textinput3">
+                    Name
+                </label>
+                <input name="" id="textinput3" placeholder="" value="" type="text">
+            </div>
+            <div data-role="fieldcontain" data-controltype="textinput">
+                <label for="textinput4">
+                    Email
+                </label>
+                <input name="" id="textinput4" placeholder="" value="" type="email">
+            </div>
+            <div data-role="fieldcontain" data-controltype="textarea">
+                <label for="textarea1">
+                    Message
+                </label>
+                <textarea name="" id="textarea1" placeholder=""></textarea>
+            </div>
+            <input type="submit" value="Submit">
+			</form>
 		</section>		
 		<footer data-role="footer">		
-			<h4>CopyRight 2015</h4>		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>		
+		</footer>
+	</div>
+	<!-- About Me Page Wrapper -->
+	<div data-role="page" id="aboutMe">	
+		<header data-role="header">
+			<h1>Welcome to My Webpage!</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#projects" data-icon="star">Projects</a></li>
+					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+				</ul>
+			</div>
+		</header>
+		<br>
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><img src="assets/siteImages/me.jpg" id="myPic"></div>
+			<div class="ui-block-b"><h2>About Me</h2></div>
+		</div>	
+		<section data-role="content">
+			<p>
+				I am currently a student at Centennial College studying Software Engineering.
+				Prior to coming to Centennial College, I had attended the University of Toronto where I had studied Astronomy and Actuarial Science,
+				and obtained my Bachelors of Science. Before starting post-secondary education, I had attended Sir John A MacDonald CI in Scarborough
+			<br></br>
+				Some of my hobbies include playing Video Games. Currently I play Starcraft 2 and am a Platinum Zerg (^_^). I am also playing CS:GO and am currently Silver IV (LOL).
+				Basketball is something that I like watching and playing (unforunately I am not that good). I occasionally play some piano (currently working on Chopin Op. 25 No. 12). I also enjoy watching documentaries on science, society and history.
+			</p>
+		</section>		
+		<footer data-role="footer">		
+			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>		
 		</footer>
 	</div>
 	<!-- JavaScript Section -->

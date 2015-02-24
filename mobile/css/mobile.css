@@ -1,0 +1,41 @@
+body {
+	/* gives a gradiant background */
+    background-image: url("assets/grey-white-gradient.png");
+    background-repeat: repeat-x;
+}
+
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+#projectLogo{
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#projectSS{
+	height: 225px;
+	width: 150px;
+}
+
+#projectASS{
+	height: 150px;
+	width: 225px;
+}
+
+#homeHeader {
+    color: #111111;
+    text-decoration: none;
+}
+
+#myPic {
+	height: 70%;
+	width: 70%;
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+}
