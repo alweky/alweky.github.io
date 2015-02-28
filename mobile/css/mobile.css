@@ -1,3 +1,9 @@
+/*	mobile.css
+	Kevin Sau Yeung Kam
+	My Website
+	This is an css file for my mobile website
+*/
+
 body {
 	/* gives a gradiant background */
     background-image: url("assets/grey-white-gradient.png");
@@ -11,7 +17,24 @@ body {
     background: transparent;
 }
 
+h1,h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+#myLogo{
+	height: 50%;
+	width: 50%;
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
 #projectLogo{
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#projects, #services{
 	border: 2px solid;
 	border-radius: 25px;
 	box-shadow: 10px 10px 5px #888888;
@@ -39,3 +62,8 @@ body {
 	border-radius: 25px;
 	box-shadow: 10px 10px 5px #888888;
 }
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}  
