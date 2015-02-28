@@ -8,24 +8,61 @@
 	<script src="scripts/detectmobilebrowser.js"></script>-->
     <!-- CSS SECTION -->
     <link href="assets/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
-	<link href="css/f.css" rel="stylesheet" />
+	<link href="css/f.css" rel="stylesheet" />	
     <link href="css/mobile.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/muslider_style.css" />
+	<!--
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link href="css/jquery.excoloSlider.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	-->
 </head>
 <body onload="init();">
 	<!-- Home Page Wrapper -->
 	<div data-role="page" id="home">	
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
-			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active" data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>		
+		<br>
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><a href="#services"><img id="services" src="assets/siteImages/services.png"/></a></div>
+			<div class="ui-block-b"><a href="#projects"><img id="projects" src="assets/siteImages/projects.jpg"/></a></div>
+		</div>
+		<hr></hr>		
+		<h2>Projects</h2>
+		<div id="my_slider" class="slider" >
+			<div class="slide">
+				<a href="#jumperPage"><img src="assets/siteImages/jumperSlider.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#androidHealthPage"><img src="assets/siteImages/androidHealthSlider.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#solarSystemPage"><img src="assets/siteImages/solarSystemSlider.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#advancedSpaceWarsPage"><img src="assets/siteImages/advancedSpaceWarsSlider.png"/></a>
+			</div>	
+		</div>
+		<div class="navslide">
+			<p>				
+				<span class="prev">PREV</span>
+				<span class="start">START</span>
+				<span class="stop">STOP</span>
+				<span class="next">NEXT</span>
+			</p>
+		</div>
 		<section data-role="content">
 			<h2>Hello! I'm a Software Engineer</h2>
 			<p>
@@ -35,11 +72,6 @@
 				<br>
 				This website contains information about me. Click on the items in the nav bar to learn more about me!
 				<br>				
-			</p>
-			<hr></hr>
-			<h2><a href="#aboutMe" id="homeHeader">About Me!</a></h2>
-			<p>
-				I am currently a student at Centennial College studying Software Engineering....
 			</p>	
 		</section>		
 		<footer data-role="footer">		
@@ -49,14 +81,16 @@
 	<!-- Projects Page Wrapper -->
 	<div data-role="page" id="projects">
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
-			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>		
@@ -137,14 +171,16 @@
 	<!-- Sub Projects Page Wrapper -->
 	<div data-role="page" data-display="overlay" id="androidHealthPage">
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
-			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>
@@ -154,10 +190,28 @@
 			<div class="ui-block-a"><img src="assets/siteImages/androidHealthThumb.png" id="projectLogo"></div>
 			<div class="ui-block-b"><h2>Android Health App</h2></div>
 		</div>
-		<a href="#popupAndroidHealth01" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth01.png" id="projectSS"></a></li>
-		<a href="#popupAndroidHealth02" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth02.png" id="projectSS"></a></li>
-		<a href="#popUpAndroidHealth03" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth03.png" id="projectSS"></a></li>
-		<a href="#popUpAndroidHealth04" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealth04.png" id="projectSS"></a></li>
+		<div id="my_sliderAndroidHealth" class="slider" >
+			<div class="slide">
+				<a href="#popupAndroidHealth01" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealths01.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAndroidHealth02" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealths02.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAndroidHealth03" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealths03.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAndroidHealth04" data-rel="popup"><img class="popphoto" src="assets/siteImages/androidHealths04.png"/></a>
+			</div>	
+		</div>
+		<div class="navslide">
+			<p>				
+				<span class="prev">PREV</span>
+				<span class="start">START</span>
+				<span class="stop">STOP</span>
+				<span class="next">NEXT</span>
+			</p>
+		</div>
 		<div data-role="popup" id="popupAndroidHealth01">
 		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="assets/siteImages/androidHealth01.png">
 		</div>
@@ -199,26 +253,46 @@
 	</div>
 	<div data-role="page" data-display="overlay" id="advancedSpaceWarsPage">
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
-			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>		
 		<br>
 		<div class="ui-grid-a">
 			<div class="ui-block-a"><img src="assets/siteImages/advancedSpaceWarsThumb.png" id="projectLogo"></div>
-			<div class="ui-block-b"><h2>Advanced Space Wars</h2></div>
+			<div class="ui-block-b"><h2>Advanced Space Wars!</h2></div>
+		</div>	
+		<div id="my_sliderAdvancedSpaceWars" class="slider" >
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars01" data-rel="popup"><img class="popphoto" src="assets/siteImages/advancedSpaceWarss01.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars02" data-rel="popup"><img class="popphoto" src="assets/siteImages/advancedSpaceWarss02.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars03" data-rel="popup"><img class="popphoto" src="assets/siteImages/advancedSpaceWarss03.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars04" data-rel="popup"><img class="popphoto" src="assets/siteImages/advancedSpaceWarss04.png"/></a>
+			</div>	
 		</div>
-		<a href="#popupAndroidHealth01" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="assets/siteImages/androidHealth01.png" id="projectSS"></a></li>
-		<a href="#popupAndroidHealth02"><img src="assets/siteImages/androidHealth02.png" height="300" width="200" id="projectSS"></a></li>
-		<a href="#popUpAndroidHealth03"><img src="assets/siteImages/androidHealth03.png" height="300" width="200" id="projectSS"></a></li>
-		<a href="#popUpAndroidHealth04"><img src="assets/siteImages/androidHealth04.png" height="300" width="200" id="projectSS"></a></li>
+		<div class="navslide">
+			<p>				
+				<span class="prev">PREV</span>
+				<span class="start">START</span>
+				<span class="stop">STOP</span>
+				<span class="next">NEXT</span>
+			</p>
+		</div>
 		<section data-role="content">
 		<div data-role="collapsible">
 			<h2>Description</h2>
@@ -245,14 +319,16 @@
 	</div>
 	<div data-role="page" data-display="overlay" id="solarSystemPage">
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
-			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>	
@@ -261,10 +337,11 @@
 			<div class="ui-block-a"><img src="assets/siteImages/solarSystemThumb.png" id="projectLogo"></div>
 			<div class="ui-block-b"><h2>ThreeJS Solar System</h2></div>
 		</div>	
-		<a href="#popupAndroidHealth01" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="assets/siteImages/androidHealth01.png" id="projectSS"></a></li>
-		<a href="#popupAndroidHealth02"><img src="assets/siteImages/androidHealth02.png" height="300" width="200" id="projectSS"></a></li>
-		<a href="#popUpAndroidHealth03"><img src="assets/siteImages/androidHealth03.png" height="300" width="200" id="projectSS"></a></li>
-		<a href="#popUpAndroidHealth04"><img src="assets/siteImages/androidHealth04.png" height="300" width="200" id="projectSS"></a></li>
+		<div id="my_sliderSolarSystem" class="slider" >
+			<div class="slide">
+				<a href="#popupsolarSystems01" data-rel="popup"><img class="popphoto" src="assets/siteImages/solarSystems01.png"/></a>
+			</div>
+		</div>
 		<section data-role="content">
 		<div data-role="collapsible">
 			<h2>Description</h2>
@@ -287,14 +364,16 @@
 	</div>
 	<div data-role="page" data-display="overlay" id="jumperPage">
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
-			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home"  data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star" class="ui-btn-active">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>	
@@ -303,10 +382,28 @@
 			<div class="ui-block-a"><img src="assets/siteImages/jumperThumb.png" id="projectLogo"></div>
 			<div class="ui-block-b"><h2>Jumper!</h2></div>
 		</div>	
-		<a href="#popupJumper01" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="assets/siteImages/jumper01.png" id="projectASS"></a></li>
-		<a href="#popupJumper02"><img src="assets/siteImages/jumper02.png" id="projectASS"></a></li>
-		<a href="#popUpJumper03"><img src="assets/siteImages/jumper03.png" id="projectASS"></a></li>
-		<a href="#popUpJumper04"><img src="assets/siteImages/jumper04.png" id="projectASS"></a></li>
+		<div id="my_sliderJumper" class="slider" >
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars01" data-rel="popup"><img class="popphoto" src="assets/siteImages/jumpers01.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars02" data-rel="popup"><img class="popphoto" src="assets/siteImages/jumpers02.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars03" data-rel="popup"><img class="popphoto" src="assets/siteImages/jumpers03.png"/></a>
+			</div>
+			<div class="slide">
+				<a href="#popupAdvancedSpaceWars04" data-rel="popup"><img class="popphoto" src="assets/siteImages/jumpers04.png"/></a>
+			</div>	
+		</div>
+		<div class="navslide">
+			<p>				
+				<span class="prev">PREV</span>
+				<span class="start">START</span>
+				<span class="stop">STOP</span>
+				<span class="next">NEXT</span>
+			</p>
+		</div>
 		<section data-role="content">
 		<div data-role="collapsible">		
 			<h2>Description</h2>
@@ -376,18 +473,21 @@
 			<a href="#services" class="ui-btn" data-rel="close">Close</a>
 		</div>
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star">Projects</a></li>
-					<li><a href="#services" data-icon="shop" class="ui-btn-active">Services</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>		
 		<section data-role="content">
-			<p>Services Content</p>
+			<h2>Services</h2>
 			<table data-role="table" id="service-table" class="ui-responsive">
 			  <thead>
 				<tr>
@@ -442,13 +542,16 @@
 	<!-- Contact Page Wrapper -->
 	<div data-role="page" id="contacts">	
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
-					<li><a href="#contacts" data-icon="mail" class="ui-btn-active">Contact Me</a></li>
+					<li><a href="#aboutMe" data-icon="star">About Me</a></li>
+					<li><a href="#contacts" data-icon="mail" class="ui-btn-active" >Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>		
@@ -487,13 +590,16 @@
 	<!-- About Me Page Wrapper -->
 	<div data-role="page" id="aboutMe">	
 		<header data-role="header">
-			<h1>Welcome to My Webpage!</h1>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img id="myLogo" src="assets/siteImages/logo.png"/></div>
+				<div class="ui-block-b"><h3>Welcome to My Webpage!</h3></div>
+			</div>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-					<li><a href="#projects" data-icon="star">Projects</a></li>
-					<li><a href="#services" data-icon="shop">Services</a></li>
+					<li><a href="#aboutMe" data-icon="star" class="ui-btn-active" >About Me</a></li>
 					<li><a href="#contacts" data-icon="mail">Contact Me</a></li>
+					<li><a href="#" class="ui-btn" data-rel="back" data-icon="back">Go Back</a></li>
 				</ul>
 			</div>
 		</header>
@@ -511,14 +617,56 @@
 				Some of my hobbies include playing Video Games. Currently I play Starcraft 2 and am a Platinum Zerg (^_^). I am also playing CS:GO and am currently Silver IV (LOL).
 				Basketball is something that I like watching and playing (unforunately I am not that good). I occasionally play some piano (currently working on Chopin Op. 25 No. 12). I also enjoy watching documentaries on science, society and history.
 			</p>
+			<div data-role="collapsible">		
+				<h2>My CV</h2>
+				<h4>Technical Skills</h4>
+				<p>
+					<strong>Programming Languages</strong> C# (Visual Studio 2013), Java (Eclipse Kepler EE, Android)
+					<br>
+					<strong>Database Software</strong> Microsoft Access 2010, SQL Server 2008 R2, Oracle SQL, MySQL
+					<br>
+					<strong>Web Application Development</strong> html5, aspx/.net, xml, jsp
+					<br>
+					<strong>Proficiency in MS Office</strong> Excel, Word, Power Point, Access, Visio
+					<br>
+					<strong>Experience working with other software including</strong> SAS, R, Raiser's Edge
+					<br>
+					<strong>Operating Systems</strong> Windows(XP, 7, 8), Linux(Redhat, Fedora)
+					<br>
+					<strong>Knowledge of various financial concepts</strong> Accounting, Corporate Finance, Derivatives, Mutual Funds
+				</p>
+				<h4>Education</h4>
+				<p>
+					<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Software Engineering Technology Advanced Diploma</strong></div>
+					<div class="ui-block-b"><h5>Sep 2012 - Present</h5></div>
+					</div>
+					<br>Centennial College, Scarborough, ON
+					<br></br>
+					<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Actuarial Science and Physics/Astronomy Honours BSc</strong></div>
+					<div class="ui-block-b"><h5>Sep 2005 - May 2000</h5></div>
+					</div>
+					<br>University of Toronto, Toronto, ON
+					<br>
+				</p>				
+			</div>
 		</section>		
 		<footer data-role="footer">		
 			<h4>&copy; Kevin Sau Yeung Kam 2015</h4>		
 		</footer>
 	</div>
 	<!-- JavaScript Section -->
-	<script src="scripts/jquery-1.11.2.min.js"></script>
-	<script src="assets/jquery.mobile-1.4.5.min.js"></script>
+	<script src="scripts/jquery-2.1.0.min.js"></script>
+	<script src="assets/jquery.mobile-1.4.5.min.js"></script>	
+	<script type="text/javascript" src="scripts/jquery.muslider-2.0.min.js" ></script>
 	<script src="scripts/mobile.js"></script>
+	<!--
+	<script src="scripts/jquery.glide.min.js"></script>
+	<script src="jquery.glide.js"></script>
+	<script src="scripts/jquery.excoloSlider.min.js"></script>
+	<script src="scripts/swiper.jquery.min.js"></script>
+	<script src="jquery.glide.js"></script>
+	-->
 </body>
 </html>
