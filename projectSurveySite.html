@@ -1,10 +1,10 @@
 <!doctype html>
 
 <!--
-	projectAServices.html
+	projectAdvancedSpaceWars.html
 	Kevin Sau Yeung Kam
 	My Website
-	This is the Services of the project Very similair to the project page
+	This is the Survey Site section of the project
 -->
 <html>
 	<head>
@@ -36,7 +36,7 @@
 							<li>
 								<a href="aboutMe.html">About Me</a>
 							</li>
-							<li class="has-dropdown">
+							<li class="has-dropdown active">
 								<a href="project.html">Projects</a>
 								<ul class="dropdown">
 									<li><a href="projectJumper.html">Jumper!</a></li>
@@ -46,7 +46,7 @@
 									<li><a href="projectSurveySite.html">Survey Site</a></li>
 								</ul>
 							</li>
-							<li class="has-dropdown active">
+							<li class="has-dropdown">
 								<a href="services.html">Services</a>
 								<ul class="dropdown">
 									<li><a href="servicesDevelopment.html">Development</a></li>
@@ -67,7 +67,8 @@
 					</section>
 				</nav>
 				<ul class="breadcrumbs hide-for-small hide-for-medium">
-					 <li><a href="services.html">Services</a></li>
+					 <li><a href="project.html">Projects</a></li>
+					 <li><a href="projectAdvancedSpaceWars.html">Advanced Space Wars</a></li>
 				</ul>
 				<div class="icon-bar five-up hide-for-large hide-for-medium hide-for-xlarge">
 					<a class="item" href="index.html">
@@ -94,58 +95,44 @@
 			</div>
 		</div>	
 	</div>
+	<div class="row">	
+		<div class="large-12 columns large-offset-1">
+		<div class="row">
+			<div class="large-3 columns">
+				<img src="assets/AdvancedSpaceWarsThumb.png"  id="projectLogo">
+			</div>
+			<div class="large-9 columns">																<!-- BUtton to play the game -->					
+				<h2>Advanced Space Wars! <a href="comp308-final-project.herokuapp.com" class="button small round">Enter Site!</a></h2>
+			</div>
+		</div>
+			<br></br>
+			<!-- Place where the slide show of pictures are-->
+			<ul class="clearing-thumbs" data-clearing>
+				<li><a href="assets/surveySite01.png"><img src="assets/surveySite01.png" height="300" width="200"></a></li>
+				<li><a href="assets/surveySite02.png"><img src="assets/surveySite02.png" height="300" width="200"></a></li>
+				<li><a href="assets/surveySite03.png"><img src="assets/surveySite03.png" height="300" width="200"></a></li>
+				<li><a href="assets/surveySite04.png"><img src="assets/surveySite04.png" height="300" width="200"></a></li>
+			</ul>
+		</div>
+	</div>	
 	<div class="row">
 		<article class="large-12 columns large-offset-1">
-			<h2>Services</h2>
+			<h2>Description</h2>
 			<p>
-				Below are some services that I offer
+				This is a Survey Site that I developed for my COMP308 Class. It uses the MEAN stack and is currently hosted on heroku.
+				<br></br>
+				Some features of this Game include
+				<ul>
+				<li><strong>Create Surveys: </strong>create T/F Surveys
+				</li>
+				<li><strong>Activate/de-Activate: </strong>make it so people can answer the survey or not
+				</li>
+				<li><strong>Anonymous Responses: </strong>anyone can answer regardless if they are signed in
+				</li>
+				<li><strong>Statistics: </strong>See how many respondents there are and the responses
+				</li>
+				</ul>
 			</p>
-			<table>
-				<thead>
-					<tr>
-						<th></th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<a href="servicesDevelopment.html">
-								<img src="assets/development.jpg" alt="" />
-							</a>
-						</td>
-						<td>
-							<h5>Development</h5>							
-							<p>I have experience using many different object oriented languages and non object oriented languages and an understanding of Agile Development process
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="servicesWebDesign.html">"
-								<img src="assets/webDesign.jpg" alt="" />
-							</a>
-						</td>
-						<td>
-							<h5>Web Development</h5>							
-							<p>I have experience creating webpages. Some examples of webpages include this website.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="servicesTutoring.html">
-								<img src="assets/tutoring.jpg" alt="" />
-							</a>
-						</td>
-						<td>
-							<h5>Tutoring</h5>							
-							<p>I have over three years of tutoring and also over eight months of professional experience at Centennial College 
-							</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
 		</article>
 	</div>
 	<hr></hr>
@@ -171,6 +158,7 @@
 	</div>
 	<script src="scripts/libs/jquery.js"></script>
 	<script src="scripts/libs/foundation.min.js"></script>
+	<script src="scripts/libs/foundation.clearing.js"></script>
 	<script>$(document).foundation()</script>
 	</body>
 </html>
